@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color : cadetblue;
+    --dark-color: rgb(6,40,42);
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    transition: all .2s ease-in-out;
+}
+
+.container{
+    background-color: var(--white);
+    width: 50%;
+    max-width: 700px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--dark-color);
+}
+
+.heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+#pwdForm{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputText{
+    user-select: none;
+    outline: none;
+    border: 2px solid var(--dark-color);
+    border-radius: 6px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 75%;
+    padding: 6px 14px;
+    margin-bottom: 2.5rem;
+}
+
+.btns{
+    width: 100%;
+    max-width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: var(--dark-color);
+    color: var(--white);
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: center;
+    transition: transform .2s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.output{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1,5rem;
+    font-weight: 600;
+    color: var(--dark-color);
+}

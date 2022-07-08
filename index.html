@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Random Password Generator</h1>
+        <form id="pwdForm">
+            <input type="text" id="inputText" class="inputText" placeholder="Generate Password" readonly/ >
+            <div class="btns">
+                <button id="generateBtn">Generate</button>
+                <button id="copyBtn">Copy</button>
+            </div>
+        </form>
+        <div class="output">
+            <p id="password"></p>
+        </div>
+    </div>
+    <!-- Adding Script File -->
+    <script src="./index.js"></script>
+</body>
+</html>
